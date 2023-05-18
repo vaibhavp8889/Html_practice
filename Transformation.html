@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 1200px;
+            height: 1200px;
+        }
+        .trans{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            color: deeppink;
+            background-color: black;
+            margin: 10px;
+            border-radius: 300px;
+            animation-name: example;
+            animation-duration: 20s;
+            animation-iteration-count: 5;
+            animation-timing-function: linear;
+        }
+        @keyframes example {
+            0%{
+                transform: translateX(0) rotate(0deg);
+                left: 0deg;
+                top: 0deg;
+            }
+            25%{
+                transform: translateX(290%) rotate(360deg);
+                left: 350deg;
+                top: 0deg;
+            }
+            50%{
+                transform: translateX(290%) translateY(300%) rotate(0deg);
+                left: 350deg;
+                top: 3500deg;
+            }
+            75%{
+                transform: translateY(300%) rotate(360deg) ;
+                left: 0deg;
+                top: 350deg;
+            }
+            100%{
+                left: 0deg;
+
+                top: 0deg;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div><div class="trans">vp</div></div>
+</body>
+</html>
